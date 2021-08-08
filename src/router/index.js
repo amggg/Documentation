@@ -2,7 +2,9 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Document from '@/components/Document'
 import ScancodePage from '@/components/home/ScancodePage'
-import Parsingcode from '@/components/home/ParsingcodePage'
+import ParsingcodePage from '@/components/home/ParsingcodePage'
+import IntegratedPage from "../components/home/IntegratedPage";
+import GenerateCodePage from "../components/home/GenerateCodePage";
 
 Vue.use(Router)
 
@@ -11,7 +13,7 @@ export default new Router({
     {
       path: '/',
       name: 'document',
-      redirect: '/scancodepage',
+      redirect: '/integraedpage',
       component: Document,
       children: [
         {
@@ -23,7 +25,19 @@ export default new Router({
         {
           path: '/parsingpage',
           name: 'parsingpage',
-          component: Parsingcode,
+          component: ParsingcodePage,
+          meta: { keepAlive: true }
+        },
+        {
+          path: '/integraedpage',
+          name: 'integraedpage',
+          component: IntegratedPage,
+          meta: { keepAlive: true }
+        },
+        {
+          path: '/generatecodepage',
+          name: 'generatecodepage',
+          component: GenerateCodePage,
           meta: { keepAlive: true }
         }
       ]

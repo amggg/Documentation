@@ -1,10 +1,27 @@
 <template>
   <div id="content">
-    <p id="test1">test1</p>
-    <p id="test2">test2</p>
-    <p id="test3">test3</p>
-    <p id="test4">test4</p>
-    <p id="test5">test5</p>
+    <h1 id="parsing1">识别二维码</h1>
+    <pre>
+       <code class="Java">
+ /**
+     * 解码uri二维码图片
+     *
+     * @return
+     */
+    public static String scanningImage(Activity mActivity, Uri uri) {
+       </code>
+     </pre>
+    <h1 id="parsing2">识别bitmap二维码</h1>
+    <pre>
+       <code class="Java">
+/**
+     * 解码bitmap二维码图片
+     *
+     * @return
+     */
+    public static String scanningImageByBitmap(Bitmap srcBitmap) {
+       </code>
+     </pre>
   </div>
 </template>
 
@@ -60,10 +77,16 @@ export default {
 };
 </script>
 <style scoped>
-#content {
-  background-color: rgb(157, 0, 248);
+#content{
+  padding: 10px;
+  border: 1px solid #d0cece;
+  border-radius: 8px;
 }
-p {
-  height: 400px;
+h1{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+pre code{
+  border-radius: 4px;
 }
 </style>
