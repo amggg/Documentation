@@ -1,8 +1,8 @@
 <template>
-   <div id="content">
-     <h1>怎么集成</h1>
-     <p>1.在根目录的build.gradle中添加jitpack依赖：</p>
-     <pre>
+  <div id="content">
+    <h1>怎么集成</h1>
+    <p>1.在根目录的build.gradle中添加jitpack依赖：</p>
+    <pre>
        <code class="Groovy">
          allprojects {
             repositories {
@@ -12,13 +12,13 @@
        </code>
      </pre>
 
-     <p>2.在project的build.gradle中添加YXing依赖：</p>
-     <pre>
+    <p>2.在project的build.gradle中添加YXing依赖：</p>
+    <pre>
        <code class="Groovy">
           implementation 'com.github.amggg:YXing:V1.1.1'
        </code>
      </pre>
-   </div>
+  </div>
 </template>
 
 <script>
@@ -33,34 +33,47 @@ const highlightCode = () => {
 };
 export default {
   name: "IntegratedPage",
+    // 离开路由之前执行的函数
+  beforeRouteLeave(to, from, next) {
+    this.scrollTop = document.documentElement.scrollTop;
+    next();
+  },
+
+  // 进入路由之前执行的函数
+  beforeRouteEnter(to, from, next) {
+    next((vm) => {});
+  },
+
+  activated() {
+    console.log("scancode activated");
+    document.documentElement.scrollTop = this.scrollTop;
+  },
   mounted() {
-    highlightCode()
+    highlightCode();
   },
   updated() {
-    highlightCode()
+    highlightCode();
   },
-  data(){
+  data() {
     return {
-
-    }
+      scrollTop: 0,
+    };
   },
-  methods : {
-
-  }
-}
+  methods: {},
+};
 </script>
 
 <style scoped>
-#content{
+#content {
   padding: 10px;
   border: 1px solid #d0cece;
   border-radius: 8px;
 }
-h1{
+h1 {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-pre code{
+pre code {
   border-radius: 4px;
 }
 </style>

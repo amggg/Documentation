@@ -185,6 +185,20 @@ const highlightCode = () => {
 };
 export default {
   name: "GenerateCodePage",
+    // 离开路由之前执行的函数
+  beforeRouteLeave(to, from, next) {
+    this.scrollTop = document.documentElement.scrollTop;
+    next();
+  },
+
+  // 进入路由之前执行的函数
+  beforeRouteEnter(to, from, next) {
+    next((vm) => {});
+  },
+
+  activated() {
+    document.documentElement.scrollTop = this.scrollTop;
+  },
   mounted() {
    highlightCode()
   },
@@ -192,7 +206,9 @@ export default {
     highlightCode()
   },
   data() {
-    return {}
+    return {
+       scrollTop: 0,
+    }
   },
   methods: {}
 }
