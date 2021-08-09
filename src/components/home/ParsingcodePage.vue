@@ -57,20 +57,16 @@ export default {
   components: {},
   activated() {
     document.documentElement.scrollTop = this.scrollTop;
-    console.log("parsingcode activated");
   },
   created() {
-    console.log("parsingcode created");
   },
   mounted() {
     highlightCode();
-    console.log("parsingcode mounted");
   },
   updated() {
     highlightCode();
   },
   destroyed() {
-    console.log("parsingcode destroyed");
   },
 
   methods: {},

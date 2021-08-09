@@ -213,21 +213,17 @@ export default {
   },
 
   activated() {
-    console.log("scancode activated");
     document.documentElement.scrollTop = this.scrollTop;
   },
   created() {
-    console.log("scancode created");
   },
   mounted() {
     highlightCode();
-    console.log("scancode mounted");
   },
   updated() {
     highlightCode();
   },
   destroyed() {
-    console.log("scancode destroyed");
   },
   methods: {},
 };
