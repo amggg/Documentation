@@ -15,6 +15,7 @@ export default new Router({
       name: 'document',
       redirect: '/integraedpage',
       component: Document,
+      props : true,
       children: [
         {
           path: '/scancodepage',

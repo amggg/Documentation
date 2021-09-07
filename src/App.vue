@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-     <keep-alive>
+    <keep-alive>
       <router-view v-if="$route.meta.keepAlive"></router-view>
     </keep-alive>
     <router-view v-if="!$route.meta.keepAlive"></router-view>
@@ -9,12 +9,12 @@
 
 <script>
 export default {
-  name: 'App'
-}
+  name: "App",
+};
 </script>
 
 <style>
-*{
+* {
   margin: 0px;
   padding: 0px;
 }

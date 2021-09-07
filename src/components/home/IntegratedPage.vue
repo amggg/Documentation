@@ -15,7 +15,7 @@
     <p>2.在project的build.gradle中添加YXing依赖：</p>
     <pre>
        <code class="Groovy">
-          implementation 'com.github.amggg:YXing:V1.1.1'
+          implementation 'com.github.amggg:YXing:V1.1.2'
        </code>
      </pre>
   </div>
@@ -64,11 +64,6 @@ export default {
 </script>
 
 <style scoped>
-#content {
-  padding: 10px;
-  border: 1px solid #d0cece;
-  border-radius: 8px;
-}
 h1 {
   margin-top: 10px;
   margin-bottom: 10px;

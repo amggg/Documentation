@@ -215,11 +215,6 @@ export default {
 </script>
 
 <style scoped>
-#content{
-  padding: 10px;
-  border: 1px solid #d0cece;
-  border-radius: 8px;
-}
 h1{
   margin-top: 10px;
   margin-bottom: 10px;
