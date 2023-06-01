@@ -1,6 +1,6 @@
 <template>
   <div id="content">
-    <h1 id="parsing1">识别二维码</h1>
+    <h1 id="parsing1">解析图片uri</h1>
     <pre>
        <code class="Java">
  /**
@@ -10,7 +10,7 @@
     public static String scanningImage(Activity mActivity, Uri uri) {
        </code>
      </pre>
-    <h1 id="parsing2">识别bitmap二维码</h1>
+    <h1 id="parsing2">解析Bitmap</h1>
     <pre>
        <code class="Java">
 /**
