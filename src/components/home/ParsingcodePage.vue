@@ -4,9 +4,8 @@
     <pre>
        <code class="Java">
  /**
-     * 解码uri二维码图片
-     *
-     * @return
+     * 解码 图片uri
+     * @return 解码结果
      */
     public static String scanningImage(Activity mActivity, Uri uri) {
        </code>
@@ -15,9 +14,8 @@
     <pre>
        <code class="Java">
 /**
-     * 解码bitmap二维码图片
-     *
-     * @return
+     * 解码 bitmap图片
+     * @return 解码结果
      */
     public static String scanningImageByBitmap(Bitmap srcBitmap) {
        </code>
