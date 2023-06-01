@@ -54,7 +54,7 @@
      * @param logo logo
      * @return
      */
-    public static Bitmap createQRcodeWithLogo(String text, Bitmap logo) {
+    public static Bitmap createQRCodeWithLogo(String text, Bitmap logo) {
        </code>
      </pre>
     <p>2.设置二维码大小，logo样式</p>
@@ -70,7 +70,7 @@
      * @param logoRaduisY  logo y圆角
      * @return
      */
-    public static Bitmap createQRcodeWithLogo(String text, int size, Bitmap logo, int logoWith, int logoHigh, float logoRaduisX, float logoRaduisY){
+    public static Bitmap createQRCodeWithLogo(String text, int size, Bitmap logo, int logoWith, int logoHigh, float logoRaduisX, float logoRaduisY){
        </code>
      </pre>
     <p>3.设置二维码大小、颜色，logo样式</p>
@@ -90,7 +90,7 @@
      * @param logoRaduisY     logo y圆角
      * @return
      */
-    public static Bitmap createQRcodeWithLogo(String text, int size, int codeColor, int backgroundColor, Bitmap logo, int logoWith, int logoHigh, float logoRaduisX, float logoRaduisY) {
+    public static Bitmap createQRCodeWithLogo(String text, int size, int codeColor, int backgroundColor, Bitmap logo, int logoWith, int logoHigh, float logoRaduisX, float logoRaduisY) {
        </code>
      </pre>
 
@@ -112,7 +112,7 @@
      * @param storkColor  描边颜色
      * @return
      */
-    public static Bitmap createQRcodeWithStrokLogo(String text, int size, Bitmap logo, int logoWith, int logoHigh, float logoRaduisX, float logoRaduisY, int storkWith, int storkColor) {
+    public static Bitmap createQRCodeWithStrokeLogo(String text, int size, Bitmap logo, int logoWith, int logoHigh, float logoRaduisX, float logoRaduisY, int storkWith, int storkColor) {
        </code>
      </pre>
     <p>2.设置二维码大小颜色，logo样式，描边大小</p>
@@ -134,7 +134,7 @@
      * @param storkColor      描边颜色
      * @return
      */
-    public static Bitmap createQRcodeWithStrokLogo(String text, int size, int codeColor, int backgroundColor, Bitmap logo, int logoWith, int logoHigh, float logoRaduisX, float logoRaduisY, int storkWith, int storkColor) {
+    public static Bitmap createQRCodeWithStrokeLogo(String text, int size, int codeColor, int backgroundColor, Bitmap logo, int logoWith, int logoHigh, float logoRaduisX, float logoRaduisY, int storkWith, int storkColor) {
        </code>
      </pre>
 
@@ -150,7 +150,7 @@
      * @param isShowContent  是否显示条形码包含的内容
      * @return 返回生成条形的位图
      */
-    public static Bitmap createBarcode(String content, int widthPix, int heightPix, boolean isShowContent) {
+    public static Bitmap createBarCode(String content, int widthPix, int heightPix, boolean isShowContent) {
        </code>
      </pre>
     <p>2.设置条码大小颜色，条码内容是否显示</p>
@@ -168,7 +168,7 @@
      * @param isShowContent   是否显示条形码包含的内容
      * @return 返回生成条形的位图
      */
-    public static Bitmap createBarcode(String content, int widthPix, int heightPix, int codeColor, int backgroundColor, int textColor, boolean isShowContent) {
+    public static Bitmap createBarCode(String content, int widthPix, int heightPix, int codeColor, int backgroundColor, int textColor, boolean isShowContent) {
        </code>
      </pre>
   </div>

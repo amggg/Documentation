@@ -13,58 +13,56 @@
           <span>集成</span>
         </template>
         <el-menu-item index="0-1" @click="scrollById('test1')"
-          >Yxing集成配置</el-menu-item
+        >Yxing集成配置</el-menu-item
         >
       </el-submenu>
       <el-submenu index="1">
         <template slot="title">
           <i class="el-icon-document"></i>
-          <span>扫描二维码</span>
+          <span>扫描码(条码/二维码)</span>
         </template>
         <el-menu-item index="1-1" @click="scrollById('scand1')"
-          >开始扫描</el-menu-item
+        >开始扫描</el-menu-item
         >
         <el-menu-item index="1-2" @click="scrollById('scand2')"
-          >配置界面扫描</el-menu-item
+        >配置界面扫描</el-menu-item
         >
         <el-menu-item index="1-3" @click="scrollById('scand3')"
-          >自定义界面扫描</el-menu-item
+        >自定义界面扫描</el-menu-item
         >
         <el-menu-item index="1-4" @click="scrollById('scand4')"
-          >获取扫码结果</el-menu-item
+        >获取扫码结果</el-menu-item
         >
       </el-submenu>
       <!-- 第二个 -->
       <el-submenu index="2">
         <template slot="title">
           <i class="el-icon-document"></i>
-          <span>生成二维码</span>
+          <span>生成码(条码/二维码)</span>
         </template>
         <el-menu-item index="2-1" @click="scrollById('generate1')"
-          >生成简单二维码</el-menu-item
+        >生成简单二维码</el-menu-item
         >
         <el-menu-item index="2-2" @click="scrollById('generate2')"
-          >生成带logo二维码</el-menu-item
+        >生成带logo二维码</el-menu-item
         >
         <el-menu-item index="2-3" @click="scrollById('generate3')"
-          >生成带描边logo二维码</el-menu-item
+        >生成带描边logo二维码</el-menu-item
         >
         <el-menu-item index="2-4" @click="scrollById('generate4')"
-          >生成条形码</el-menu-item
+        >生成条形码</el-menu-item
         >
       </el-submenu>
       <!-- 第三个 -->
       <el-submenu index="3">
         <template slot="title">
           <i class="el-icon-document"></i>
-          <span>识别二维码</span>
+          <span>识别码(条码/二维码)</span>
         </template>
         <el-menu-item index="2-1" @click="scrollById('parsing1')"
-          >识别uri二维码</el-menu-item
-        >
+        >通过uri识别</el-menu-item>
         <el-menu-item index="2-2" @click="scrollById('parsing2')"
-          >识别bitmap二维码</el-menu-item
-        >
+        >通过bitmap识别</el-menu-item>
       </el-submenu>
     </el-menu>
     <div class="content">
@@ -135,11 +133,11 @@ export default {
 }
 .el-menu {
   position: fixed;
-  width: 200px;
+  width: 240px;
 }
 .content {
   flex: 1;
-  margin-left: 200px;
+  margin-left: 240px;
   overflow: hidden;
 }
 </style>
