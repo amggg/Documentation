@@ -22,13 +22,13 @@
           <span>扫描码(条码/二维码)</span>
         </template>
         <el-menu-item index="1-1" @click="scrollById('scand1')"
-        >开始扫描</el-menu-item
+        >开始扫码</el-menu-item
         >
         <el-menu-item index="1-2" @click="scrollById('scand2')"
-        >配置界面扫描</el-menu-item
+        >配置界面扫码</el-menu-item
         >
         <el-menu-item index="1-3" @click="scrollById('scand3')"
-        >自定义界面扫描</el-menu-item
+        >自定义界面扫码</el-menu-item
         >
         <el-menu-item index="1-4" @click="scrollById('scand4')"
         >获取扫码结果</el-menu-item

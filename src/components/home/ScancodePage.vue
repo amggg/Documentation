@@ -1,7 +1,7 @@
 <template>
   <div id="content">
-    <h1 id="scand1">开始扫描</h1>
-    <p id="notice">*调用扫码前请先自行申请Camara权限，否则扫码页黑屏</p>
+    <h1 id="scand1">开始扫码</h1>
+    <p id="notice">*调用扫码前请先自行申请Camera权限，否则扫码页黑屏</p>
     <div>
       <p>1.Activity中启动：</p>
       <pre>
@@ -35,7 +35,7 @@
      </pre>
     </div>
 
-    <h1 id="scand2">配置界面扫描</h1>
+    <h1 id="scand2">配置界面扫码</h1>
     <div>
       <p>setStyle(ScanStyle.CUSTOMIZE) 进行自定义样式设计</p>
       <pre>
@@ -99,7 +99,7 @@
     </div>
 
 
-    <h1 id="scand3">自定义界面扫描</h1>
+    <h1 id="scand3">自定义界面扫码</h1>
     <div>
       <p>1.新建Activity 继承 ScanCodeActivity</p>
       <pre>
@@ -171,6 +171,15 @@ ScanCodeConfig.create(MainActivity.this)
                                     .buidler()
                                     //跳转*自定义扫码页MyScanActivity*   扫码页可自定义样式
                                     .start(MyScanActivity.class);
+       </code>
+     </pre>
+
+      <p>5.在AndroidManifest.xml中 为MyScanActivity 添加configChanges属性 防止屏幕销毁重建造成异常</p>
+      <pre>
+       <code class="Java">
+        &ltactivity android:name=".MyScanActivity"
+                  android:configChanges="keyboard|orientation|screenSize"
+        /&gt
        </code>
      </pre>
     </div>

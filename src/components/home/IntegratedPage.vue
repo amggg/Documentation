@@ -1,18 +1,17 @@
 <template>
   <div id="content">
     <h1>怎么集成</h1>
-    <p>1.在根目录的build.gradle中添加jitpack依赖：</p>
+    <p>1.在根目录的build.gradle或settings.gradle中添加jitpack依赖
+    </p>
     <pre>
        <code class="Groovy">
-         allprojects {
             repositories {
                maven { url "https://jitpack.io" }
             }
-         }
        </code>
      </pre>
 
-    <p>2.在project的build.gradle中添加YXing依赖：</p>
+    <p>2.在项目的build.gradle中添加YXing依赖：</p>
     <pre>
        <code class="Groovy">
           implementation 'com.github.amggg:YXing:V2.0.1'
@@ -33,7 +32,7 @@ const highlightCode = () => {
 };
 export default {
   name: "IntegratedPage",
-    // 离开路由之前执行的函数
+  // 离开路由之前执行的函数
   beforeRouteLeave(to, from, next) {
     this.scrollTop = document.documentElement.scrollTop;
     next();
