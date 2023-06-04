@@ -15,7 +15,7 @@
     <p>2.在project的build.gradle中添加YXing依赖：</p>
     <pre>
        <code class="Groovy">
-          implementation 'com.github.amggg:YXing:V1.1.4'
+          implementation 'com.github.amggg:YXing:V2.0.1'
        </code>
      </pre>
   </div>
